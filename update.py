@@ -541,7 +541,7 @@ class LocaleUpdater:
             target_locales = [
                 "ar", "cs", "da", "de", "el", "en-GB", "es-ES", "es-MX", "fr", "hu",
                 "id", "it", "ja", "ko", "lt", "nl", "nn-NO", "pl", "pt-BR", "pt-PT",
-                "ru", "sv-SE", "th", "vi", "zh-CN", "zh-TW"
+                "ru", "sv-SE", "th", "uk", "vi", "zh-CN", "zh-TW"
             ]
 
         # Create temp directory
