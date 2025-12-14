@@ -79,3 +79,4 @@ enable-javascript =
 webrtc-header = Connexion WebRTC entre pairs
 ref-header = En-tête du référent HTTP
 statusbar-header = Barre d'état
+tabbrowser-confirm-session-restore-checkbox = Rouvrir les fenêtres et onglets précédents
