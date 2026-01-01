@@ -1,5 +1,5 @@
 restart-prompt-title = Redémarrer { -brand-short-name }
-restart-prompt-question = Voulez-vous vraiment redémarrer { -brand-short-name }?
+restart-prompt-question = Voulez-vous vraiment redémarrer { -brand-short-name } ?
 appmenuitem-restart-browser =
     .label = Redémarrer
 copy-url =
@@ -80,3 +80,23 @@ webrtc-header = Connexion WebRTC entre pairs
 ref-header = En-tête du référent HTTP
 statusbar-header = Barre d'état
 tabbrowser-confirm-session-restore-checkbox = Rouvrir les fenêtres et onglets précédents
+sidebar-header = Barre latérale
+tab-bar-header = Barre d'onglets
+private-tab =
+    .label =
+        { $isPrivate ->
+            [true] Sortir du mode privé
+           *[false] Rendre l'onglet privé
+        }
+update-application-manual =
+    .label = Ne jamais vérifier les mises à jour (non recommandé)
+    .accesskey = N
+dynamic-theme-auto =
+    .label = Définir dynamiquement le mode clair/foncé
+insert-related-after-current =
+    .label = Insérer un nouvel onglet associé après l'onglet actuel
+tab-feature-header = Menu contextuel de l'onglet
+enable-copy-active-tab =
+    .label = Copier l'URL uniquement à partir de l'onglet actif
+show-copy-all-urls =
+    .label = Afficher le menu « Copier toutes les URL des onglets »
