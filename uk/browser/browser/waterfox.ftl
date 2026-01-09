@@ -1,9 +1,9 @@
 restart-prompt-question = Ви впевнені, що хочете перезапустити { -brand-short-name }?
 restart-prompt-title = Перезапуск { -brand-short-name }
 appmenuitem-restart-browser =
-    .label = Перезапуск
+    .label = Перезапустити
 copy-all-urls =
-    .label = Скопіювати всі посилання вкладок
+    .label = Скопіювати посилання всіх вкладок
 copy-url =
     .label = Скопіювати посилання вкладки
 unload-tab =
