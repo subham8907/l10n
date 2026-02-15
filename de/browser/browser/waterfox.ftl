@@ -100,3 +100,11 @@ private-tab =
             [true] Privaten Tab schließen
            *[false] Privaten Tab erstellen
         }
+preferences-doh-ultra-detailed-desc-2 = Bietet eine zusätzliche Verschlüsselungsschicht, die über "DNS über HTTPS" hinausgeht
+preferences-doh-ultra-detailed-desc-3 = Maximaler DNS-Datenschutz - niemand kann sehen, welche Websites Sie besuchen
+preferences-doh-ultra-fallback-mode = Fallback-Verhalten:
+preferences-doh-ultra-fallback-disabled = Nicht auf System DNS zurückfallen (Webseiten laden nicht wenn der Secure DNS ausfällt)
+pane-theme-title = Aussehen
+animation-header = Animationen
+appearance-header = Aussehen
+bookmark-header = Lesezeichenleiste
