@@ -408,3 +408,112 @@ tree-insert-new-tab-from-pinned-tab-at-no-control =
     .label = No control (respect the decision by the browser or other tab extensions)
 tree-insert-new-tab-from-pinned-tab-at-top =
     .label = The top of the tree (near the opener)
+
+## Ad Blocking
+waterfox-blocker-header = Ad Blocking
+waterfox-blocker-intro-description = Waterfox blocks ads, tracking scripts and other nuisance requests.
+
+waterfox-blocker-setting-on =
+    .label = Ad Blocking
+waterfox-blocker-setting-on-description = Block ads and nuisance requests on websites. Allowing search partners as an exception helps sustain and fund Waterfox.
+
+waterfox-blocker-setting-off =
+    .label = Off
+waterfox-blocker-setting-off-description =
+    .value = Turn off ad blocking.
+
+waterfox-blocker-dropdown-label =
+    .value = Search partner behaviour:
+waterfox-blocker-dropdown-option-partner-exception =
+    .label = Allow ads on Waterfox search partners
+waterfox-blocker-dropdown-option-block-everything =
+    .label = Block all ads
+
+waterfox-blocker-manage-filter-lists =
+    .label = Manage Filter Lists...
+
+waterfox-blocker-filter-lists-window =
+    .title = Waterfox Ad Blocking Filter Lists
+waterfox-blocker-filter-lists-dialog =
+    .buttonlabelaccept = Save Changes
+    .buttonaccesskeyaccept = S
+waterfox-blocker-filter-lists-description =
+    .value = Choose which filter lists are enabled for ad blocking.
+waterfox-blocker-filter-lists-active-count =
+    .value = { $activeCount } active of { $totalCount }
+waterfox-blocker-filter-lists-column-enabled =
+    .label = Enabled
+waterfox-blocker-filter-lists-column-name =
+    .label = Filter List
+waterfox-blocker-filter-lists-column-category =
+    .label = Category
+waterfox-blocker-filter-lists-enable =
+    .label = Enable
+waterfox-blocker-filter-lists-disable =
+    .label = Disable
+
+waterfox-blocker-extension-detected = Waterfox now includes built-in adblocking. You may not need { $extensionName } any more.
+waterfox-blocker-extension-detected-learn-more =
+    .label = Learn more
+waterfox-blocker-extension-detected-dismiss =
+    .label = Don’t show again
+waterfox-blocker-extension-install-warning = Waterfox has a built-in ad blocker already active. Installing { $extensionName } may cause conflicts or reduced performance.
+waterfox-blocker-extension-install-got-it =
+    .label = Got it
+waterfox-blocker-extension-install-learn-more =
+    .label = Learn more
+
+waterfox-blocker-third-party-notice-description = You have { $extensionName } enabled. Only one adblocker can be run at a time.
+
+waterfox-blocker-exceptions-window =
+    .title = Exceptions for Ad Blocking
+waterfox-blocker-exceptions-description = You can specify which websites have Ad Blocking turned off. Type the exact address of the site you want to manage and then click Add.
+
+waterfox-blocker-protections-category-label = Ad Blocking
+waterfox-blocker-protections-category-label-off = Ad Blocking (off)
+waterfox-blocker-protections-category-label-disabled-for-site = Ad Blocking (disabled for site)
+waterfox-blocker-protections-toggle-description = Block ads and nuisance requests on this site.
+waterfox-blocker-protections-toggle-label-site = Ad Blocking on this site
+waterfox-blocker-protections-toggle-label-host = Ad Blocking on { $host }
+waterfox-blocker-protections-site-summary-off = Ad Blocking is turned off.
+waterfox-blocker-protections-site-summary-unavailable = Ad Blocking is not available on this page.
+waterfox-blocker-protections-site-summary-disabled-for-site = Ad Blocking is disabled for this site.
+waterfox-blocker-protections-stats-singular = { $count } ad blocked on this tab
+waterfox-blocker-protections-stats-plural = { $count } ads blocked on this tab
+waterfox-blocker-protections-subview-intro = Waterfox Ad Blocking blocks ads, nuisance scripts and ad requests.
+waterfox-blocker-protections-subview-tab-count-label = Blocked on this tab
+waterfox-blocker-protections-disable-for-site = Disable for this site
+waterfox-blocker-protections-settings-button = Manage ad blocking settings
+
+waterfox-blocker-filter-lists-category-core = Default
+waterfox-blocker-filter-lists-category-privacy = Privacy
+waterfox-blocker-filter-lists-category-annoyances = Annoyances
+waterfox-blocker-filter-lists-category-optional = Optional
+waterfox-blocker-filter-lists-category-regional = Regional
+waterfox-blocker-filter-lists-empty-state = No filter lists available.
+waterfox-blocker-extension-fallback-name-this = this extension
+waterfox-blocker-extension-fallback-name-your = your extension
+
+waterfox-blocker-spotlight-title = Waterfox now includes adblocking
+waterfox-blocker-spotlight-subtitle = We noticed you have { $extensionName } installed. Waterfox now has a native, built-in adblocker. Using it helps support Waterfox, but as always it’s your choice.
+waterfox-blocker-spotlight-primary-button = No thanks, keep my setup
+waterfox-blocker-spotlight-secondary-button = Review ad blocking settings
+waterfox-blocker-prompt-title = Waterfox Ad Blocking
+waterfox-blocker-reenable-conflict-message = Waterfox built-in ad blocking and “{ $extensionName }” can conflict, duplicate blocking, and reduce performance. Choose which blocker to keep active.
+waterfox-blocker-reenable-use-built-in = Use built-in blocker
+waterfox-blocker-reenable-keep-extension = Keep extension blocker
+waterfox-blocker-extension-install-manage-settings = You can manage built-in ad blocking in Settings > Privacy & Security.
+waterfox-blocker-extension-install-anyway = Install anyway
+waterfox-blocker-extension-install-keep-built-in = Keep using built-in blocker
+
+waterfox-blocked-page-title = Waterfox blocked this page
+waterfox-blocked-page-heading = Waterfox blocked this page
+waterfox-blocked-page-description = A filter rule blocked this top-level page load.
+waterfox-blocked-page-details =
+    .aria-label = Blocked page details
+waterfox-blocked-page-blocked-url-label = Blocked URL
+waterfox-blocked-page-matched-rule-label = Matched rule
+waterfox-blocked-page-unavailable = Unavailable
+waterfox-blocked-page-hint = Load anyway will temporarily allow this site.
+waterfox-blocked-page-go-back = Go back
+waterfox-blocked-page-load-anyway = Load anyway
