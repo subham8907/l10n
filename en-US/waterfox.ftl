@@ -484,16 +484,130 @@ waterfox-blocker-stats =
         [one] { $count } ad blocked on this site
        *[other] { $count } ads blocked on this site
     }
-waterfox-blocker-panel-settings-button = Manage ad blocking settings
+waterfox-blocker-panel-settings-button =
+    .label = Manage ad blocking settings
+waterfox-blocker-panel-cosmetic-filtering-disable =
+    .label = Disable cosmetic filtering
+waterfox-blocker-panel-cosmetic-filtering-enable =
+    .label = Enable cosmetic filtering
+waterfox-blocker-panel-scripting-disable =
+    .label = Disable JavaScript
+waterfox-blocker-panel-scripting-enable =
+    .label = Enable JavaScript
+waterfox-blocker-panel-remote-fonts-disable =
+    .label = Disable remote fonts
+waterfox-blocker-panel-remote-fonts-enable =
+    .label = Enable remote fonts
+waterfox-blocker-panel-zapper-start =
+    .label = Zap element
+waterfox-blocker-panel-zapper-stop =
+    .label = Stop zapper
+waterfox-blocker-panel-picker-start =
+    .label = Pick element
+waterfox-blocker-panel-picker-stop =
+    .label = Stop picker
+waterfox-blocker-panel-logger-button =
+    .label = Open logger
 waterfox-blocker-show-badge-pref =
     .label = Show blocked count on toolbar button
 
+waterfox-blocker-filter-lists-custom-urls = Fetched filter lists
+waterfox-blocker-filter-lists-custom-urls-description = Add one HTTP or HTTPS filter list URL per line. These lists are fetched after you save.
+waterfox-blocker-filter-lists-custom-urls-placeholder =
+    .placeholder = https://example.com/filter-list.txt
+waterfox-blocker-filter-lists-custom-rules = Your rules
+waterfox-blocker-filter-lists-custom-rules-description = Add one adblock rule per line for your own custom blocking and allow rules.
+waterfox-blocker-filter-lists-custom-rules-placeholder =
+    .placeholder = ||example.com^
+waterfox-blocker-filter-lists-built-in = Built-in filter lists
 waterfox-blocker-filter-lists-category-core = Default
 waterfox-blocker-filter-lists-category-privacy = Privacy
 waterfox-blocker-filter-lists-category-annoyances = Annoyances
 waterfox-blocker-filter-lists-category-optional = Optional
 waterfox-blocker-filter-lists-category-regional = Regional
 waterfox-blocker-filter-lists-empty-state = No filter lists available.
+waterfox-blocker-filter-lists-invalid-url-title = Invalid filter list URL
+# Variables:
+#   $urls (String) - A newline-separated list of invalid filter list URLs.
+waterfox-blocker-filter-lists-invalid-url-message =
+    Use only HTTP or HTTPS URLs. Could not save:
+    { $urls }
+
+waterfox-blocker-exceptions-entry-field =
+    .label = Allowlist entries
+waterfox-blocker-exceptions-entry-field-description = Paste one domain or URL per line. Use Ctrl+Enter to add them.
+waterfox-blocker-exceptions-placeholder =
+    .placeholder = example.com
+waterfox-blocker-exceptions-add =
+    .label = Add to allowlist
+waterfox-blocker-exceptions-import =
+    .label = Import…
+waterfox-blocker-exceptions-export =
+    .label = Export…
+waterfox-blocker-exceptions-import-title = Import allowlist
+waterfox-blocker-exceptions-export-title = Export allowlist
+waterfox-blocker-exceptions-import-error-title = Import failed
+waterfox-blocker-exceptions-import-error-message = The selected file could not be read.
+waterfox-blocker-exceptions-export-error-title = Export failed
+waterfox-blocker-exceptions-export-error-message = The allowlist could not be written.
+waterfox-blocker-exceptions-invalid-title = Invalid allowlist entry
+# Variables:
+#   $count (Number) - Number of invalid entries.
+#   $entries (String) - A newline-separated list of entries that could not be used.
+waterfox-blocker-exceptions-invalid-message = Could not use { $count } entries:
+    { $entries }
+waterfox-blocker-exceptions-import-summary-title = Allowlist imported
+waterfox-blocker-exceptions-import-summary-message = The allowlist was updated.
+waterfox-blocker-exceptions-export-summary-title = Allowlist exported
+waterfox-blocker-exceptions-export-summary-message = The allowlist was saved to the selected file.
+
+waterfox-blocker-logger-window =
+    .title = Blocker Logger
+waterfox-blocker-logger-description = Review blocker activity from the current browsing session.
+waterfox-blocker-logger-current-tab-only =
+    .label = Current tab only
+waterfox-blocker-logger-filter =
+    .placeholder = Filter logger rows
+waterfox-blocker-logger-pause =
+    .label = Pause
+waterfox-blocker-logger-resume =
+    .label = Resume
+waterfox-blocker-logger-clear =
+    .label = Clear
+waterfox-blocker-logger-export =
+    .label = Export…
+waterfox-blocker-logger-export-title = Export blocker log
+# Variables:
+#   $shown (Number) - The number of log entries currently visible.
+#   $total (Number) - The total number of log entries loaded in the window.
+waterfox-blocker-logger-summary = { $shown } of { $total } entries shown
+waterfox-blocker-logger-state-live = Live
+waterfox-blocker-logger-state-paused = Paused
+waterfox-blocker-logger-column-time = Time
+waterfox-blocker-logger-column-action = Action
+waterfox-blocker-logger-column-type = Type
+waterfox-blocker-logger-column-source = Source
+waterfox-blocker-logger-column-rule = Rule
+waterfox-blocker-logger-column-url = URL
+waterfox-blocker-logger-details-title = Entry details
+waterfox-blocker-logger-details-hint = Select an entry to inspect it.
+waterfox-blocker-logger-details-empty = Select an entry to inspect it.
+waterfox-blocker-logger-empty = No blocker log entries yet.
+waterfox-blocker-logger-empty-filtered = No entries match the current tab or row filter.
+waterfox-blocker-logger-field-time = Timestamp
+waterfox-blocker-logger-field-scope = Scope
+waterfox-blocker-logger-field-type = Type
+waterfox-blocker-logger-field-action = Action
+waterfox-blocker-logger-field-url = URL
+waterfox-blocker-logger-field-document-url = Document URL
+waterfox-blocker-logger-field-rule = Rule
+waterfox-blocker-logger-field-message = Message
+waterfox-blocker-logger-field-source = Source
+waterfox-blocker-logger-field-tab-id = Tab ID
+waterfox-blocker-logger-export-done-title = Export complete
+waterfox-blocker-logger-export-done-message = The visible blocker log entries were saved.
+waterfox-blocker-logger-export-error-title = Export failed
+waterfox-blocker-logger-export-error-message = The blocker log could not be written.
 waterfox-blocker-extension-fallback-name-this = this extension
 waterfox-blocker-extension-fallback-name-your = your extension
 
