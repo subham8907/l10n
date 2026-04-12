@@ -506,8 +506,6 @@ waterfox-blocker-panel-picker-start =
     .label = Pick element
 waterfox-blocker-panel-picker-stop =
     .label = Stop picker
-waterfox-blocker-panel-logger-button =
-    .label = Open logger
 waterfox-blocker-show-badge-pref =
     .label = Show blocked count on toolbar button
 
@@ -561,53 +559,6 @@ waterfox-blocker-exceptions-import-summary-message = The allowlist was updated.
 waterfox-blocker-exceptions-export-summary-title = Allowlist exported
 waterfox-blocker-exceptions-export-summary-message = The allowlist was saved to the selected file.
 
-waterfox-blocker-logger-window =
-    .title = Blocker Logger
-waterfox-blocker-logger-description = Review blocker activity from the current browsing session.
-waterfox-blocker-logger-current-tab-only =
-    .label = Current tab only
-waterfox-blocker-logger-filter =
-    .placeholder = Filter logger rows
-waterfox-blocker-logger-pause =
-    .label = Pause
-waterfox-blocker-logger-resume =
-    .label = Resume
-waterfox-blocker-logger-clear =
-    .label = Clear
-waterfox-blocker-logger-export =
-    .label = Export…
-waterfox-blocker-logger-export-title = Export blocker log
-# Variables:
-#   $shown (Number) - The number of log entries currently visible.
-#   $total (Number) - The total number of log entries loaded in the window.
-waterfox-blocker-logger-summary = { $shown } of { $total } entries shown
-waterfox-blocker-logger-state-live = Live
-waterfox-blocker-logger-state-paused = Paused
-waterfox-blocker-logger-column-time = Time
-waterfox-blocker-logger-column-action = Action
-waterfox-blocker-logger-column-type = Type
-waterfox-blocker-logger-column-source = Source
-waterfox-blocker-logger-column-rule = Rule
-waterfox-blocker-logger-column-url = URL
-waterfox-blocker-logger-details-title = Entry details
-waterfox-blocker-logger-details-hint = Select an entry to inspect it.
-waterfox-blocker-logger-details-empty = Select an entry to inspect it.
-waterfox-blocker-logger-empty = No blocker log entries yet.
-waterfox-blocker-logger-empty-filtered = No entries match the current tab or row filter.
-waterfox-blocker-logger-field-time = Timestamp
-waterfox-blocker-logger-field-scope = Scope
-waterfox-blocker-logger-field-type = Type
-waterfox-blocker-logger-field-action = Action
-waterfox-blocker-logger-field-url = URL
-waterfox-blocker-logger-field-document-url = Document URL
-waterfox-blocker-logger-field-rule = Rule
-waterfox-blocker-logger-field-message = Message
-waterfox-blocker-logger-field-source = Source
-waterfox-blocker-logger-field-tab-id = Tab ID
-waterfox-blocker-logger-export-done-title = Export complete
-waterfox-blocker-logger-export-done-message = The visible blocker log entries were saved.
-waterfox-blocker-logger-export-error-title = Export failed
-waterfox-blocker-logger-export-error-message = The blocker log could not be written.
 waterfox-blocker-extension-fallback-name-this = this extension
 waterfox-blocker-extension-fallback-name-your = your extension
 
