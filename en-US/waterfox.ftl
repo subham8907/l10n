@@ -568,8 +568,11 @@ waterfox-adblocker-nav-my-rules = My rules
 waterfox-adblocker-nav-allowlist = Allowlist
 waterfox-adblocker-general-heading = General settings
 waterfox-adblocker-general-description = Control the overall behavior of the built-in ad blocker.
+waterfox-adblocker-general-enabled = Enable built-in ad blocking
 waterfox-adblocker-general-search-partner =
     Allow ads for search partners (recommended for compatibility)
+waterfox-adblocker-general-show-badge = Show blocked count on toolbar button
+waterfox-adblocker-general-cname = Enable CNAME uncloaking for disguised third-party trackers
 waterfox-adblocker-filter-lists-heading = Filter lists
 waterfox-adblocker-filter-lists-description = Manage the filter lists that power blocking.
 waterfox-adblocker-open-filter-lists = Manage filter lists
