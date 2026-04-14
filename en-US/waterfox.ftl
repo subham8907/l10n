@@ -479,6 +479,8 @@ waterfox-blocker-panel-toggle =
 waterfox-blocker-panel-disabled = Ad blocking is off
 waterfox-blocker-panel-site-excepted = Ads allowed on this site
 waterfox-blocker-panel-partner-allowed = Ads allowed for search partners
+waterfox-blocker-panel-cname-status-enabled = CNAME uncloaking is on
+waterfox-blocker-panel-cname-status-disabled = CNAME uncloaking is off
 waterfox-blocker-stats =
     { $count ->
         [one] { $count } ad blocked on this site
@@ -498,7 +500,9 @@ waterfox-blocker-panel-scripting-disable =
     .label = Disable scripting
 waterfox-blocker-panel-scripting-enable =
     .label = Enable scripting
-waterfox-blocker-panel-firewall-title = Dynamic filtering
+waterfox-blocker-panel-firewall-title =
+    .label = Dynamic filtering
+    .tooltiptext = Toggle dynamic filtering
 waterfox-blocker-panel-firewall-description = Temporary rules apply now. Save to make them permanent.
 waterfox-blocker-panel-firewall-save =
     .label = Save
@@ -551,6 +555,54 @@ waterfox-blocker-panel-picker-stop =
     .label = Stop picker
 waterfox-blocker-show-badge-pref =
     .label = Show blocked count on toolbar button
+waterfox-blocker-cname-uncloaking-pref =
+    .label = Enable CNAME uncloaking for disguised third-party trackers
+
+waterfox-adblocker-page-title = Ad Blocking
+waterfox-adblocker-page-heading = Ad Blocking
+waterfox-adblocker-page-description = Manage filters, rules, and site exceptions in one place.
+waterfox-adblocker-nav-general = General
+waterfox-adblocker-nav-filter-lists = Filter lists
+waterfox-adblocker-nav-my-filters = My filters
+waterfox-adblocker-nav-my-rules = My rules
+waterfox-adblocker-nav-allowlist = Allowlist
+waterfox-adblocker-general-heading = General settings
+waterfox-adblocker-general-description = Control the overall behavior of the built-in ad blocker.
+waterfox-adblocker-general-search-partner =
+    Allow ads for search partners (recommended for compatibility)
+waterfox-adblocker-filter-lists-heading = Filter lists
+waterfox-adblocker-filter-lists-description = Manage the filter lists that power blocking.
+waterfox-adblocker-open-filter-lists = Manage filter lists
+waterfox-adblocker-filter-list-urls-label = Custom filter list URLs
+waterfox-adblocker-save-section = Save changes
+waterfox-adblocker-my-filters-heading = My filters
+waterfox-adblocker-my-filters-description = Add custom filters and cosmetic rules.
+waterfox-adblocker-custom-rules-label = Custom filters
+waterfox-adblocker-my-rules-heading = My rules
+waterfox-adblocker-my-rules-description = View and edit dynamic filtering rules.
+waterfox-adblocker-my-rules-switches-label = Host switches
+waterfox-adblocker-my-rules-firewall-label = Dynamic firewall rules
+waterfox-adblocker-my-rules-url-label = URL rules
+waterfox-adblocker-apply-temporary = Apply temporary
+waterfox-adblocker-save-permanent = Save permanent
+waterfox-adblocker-revert-rules = Revert to saved
+waterfox-adblocker-allowlist-heading = Allowlist
+waterfox-adblocker-allowlist-description = Sites that are excluded from ad blocking.
+waterfox-adblocker-open-allowlist = Manage allowlist
+waterfox-adblocker-allowlist-label = Allowlisted sites
+waterfox-adblocker-status-general-saved = General settings updated.
+waterfox-adblocker-status-filter-lists-invalid =
+    Use only HTTP or HTTPS filter-list URLs. Invalid entries:
+    { $urls }
+waterfox-adblocker-status-filter-lists-saved = Filter list URLs updated.
+waterfox-adblocker-status-my-filters-saved = Custom filters updated.
+waterfox-adblocker-status-my-rules-invalid =
+    Could not parse some rules:
+    { $lines }
+waterfox-adblocker-status-my-rules-saved = Dynamic rules saved.
+waterfox-adblocker-status-my-rules-applied = Temporary dynamic rules applied.
+waterfox-adblocker-status-my-rules-reverted = Dynamic rules reverted to saved rules.
+waterfox-adblocker-status-allowlist-saved = Allowlist updated.
 
 waterfox-blocker-filter-lists-custom-urls = Fetched filter lists
 waterfox-blocker-filter-lists-custom-urls-description = Add one HTTP or HTTPS filter list URL per line. These lists are fetched after you save.
