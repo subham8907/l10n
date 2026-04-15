@@ -501,6 +501,7 @@ waterfox-adblocker-page-heading = Ad Blocking
 waterfox-adblocker-page-description = Manage filters, rules, and site exceptions in one place.
 waterfox-adblocker-nav-general = General
 waterfox-adblocker-nav-filter-lists = Filter lists
+waterfox-adblocker-nav-custom-rules = Custom rules
 waterfox-adblocker-nav-my-filters = My filters
 waterfox-adblocker-nav-allowlist = Allowlist
 waterfox-adblocker-general-heading = General settings
@@ -522,6 +523,9 @@ waterfox-adblocker-allowlist-heading = Allowlist
 waterfox-adblocker-allowlist-description = Sites that are excluded from ad blocking.
 waterfox-adblocker-open-allowlist = Manage allowlist
 waterfox-adblocker-allowlist-label = Allowlisted sites
+waterfox-blocker-allowlist-label = Allowlisted sites
+waterfox-blocker-allowlist-placeholder =
+    .placeholder = example.com
 waterfox-adblocker-status-general-saved = General settings updated.
 waterfox-adblocker-status-filter-lists-invalid =
     Use only HTTP or HTTPS filter-list URLs. Invalid entries:
