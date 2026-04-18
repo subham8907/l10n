@@ -431,14 +431,19 @@ waterfox-blocker-dropdown-option-block-everything =
 
 waterfox-blocker-manage-filter-lists =
     .label = Manage Filter Lists...
+waterfox-blocker-manage-custom-rules =
+    .label = Manage Custom Rules...
 
-waterfox-blocker-filter-lists-window =
+waterfox-blocker-filter-lists-window = Waterfox Ad Blocking Filter Lists
     .title = Waterfox Ad Blocking Filter Lists
 waterfox-blocker-filter-lists-dialog =
     .buttonlabelaccept = Save Changes
     .buttonaccesskeyaccept = S
-waterfox-blocker-filter-lists-description =
+waterfox-blocker-filter-lists-description = Choose which filter lists are enabled for ad blocking.
     .value = Choose which filter lists are enabled for ad blocking.
+waterfox-blocker-filter-lists-close =
+    .aria-label = Close
+waterfox-blocker-filter-lists-cancel = Cancel
 waterfox-blocker-filter-lists-active-count =
     .value = { $activeCount } active of { $totalCount }
 waterfox-blocker-filter-lists-column-enabled =
@@ -451,6 +456,16 @@ waterfox-blocker-filter-lists-enable =
     .label = Enable
 waterfox-blocker-filter-lists-disable =
     .label = Disable
+
+waterfox-blocker-custom-rules-window =
+    .title = Waterfox Ad Blocking Custom Rules
+waterfox-blocker-custom-rules-dialog =
+    .buttonlabelaccept = Save Changes
+    .buttonaccesskeyaccept = S
+waterfox-blocker-custom-rules-description =
+    .value = Add one adblock rule per line. These rules are saved separately from fetched filter lists.
+waterfox-blocker-custom-rules-placeholder =
+    .placeholder = ||example.com^
 
 waterfox-blocker-extension-detected = Waterfox now includes built-in adblocking. You may not need { $extensionName } any more.
 waterfox-blocker-extension-detected-learn-more =
@@ -479,46 +494,79 @@ waterfox-blocker-panel-toggle =
 waterfox-blocker-panel-disabled = Ad blocking is off
 waterfox-blocker-panel-site-excepted = Ads allowed on this site
 waterfox-blocker-panel-partner-allowed = Ads allowed for search partners
-waterfox-blocker-stats =
+waterfox-blocker-panel-cname-status-enabled = CNAME uncloaking is on
+waterfox-blocker-panel-cname-status-disabled = CNAME uncloaking is off
+waterfox-blocker-panel-shield-mode = Privacy Shields mode
+waterfox-blocker-panel-shield-mode-off = Off
+waterfox-blocker-panel-shield-mode-standard = Standard
+waterfox-blocker-panel-shield-mode-strict = Strict
+# $count is the number of pop-up windows blocked on the current site.
+waterfox-blocker-panel-popup-shield =
     { $count ->
-        [one] { $count } ad blocked on this site
-       *[other] { $count } ads blocked on this site
+        [one] 1 pop-up blocked by shields
+       *[other] { $count } pop-ups blocked by shields
     }
-waterfox-blocker-panel-settings-button =
-    .label = Manage ad blocking settings
-waterfox-blocker-panel-cosmetic-filtering-disable =
-    .label = Disable cosmetic filtering
-waterfox-blocker-panel-cosmetic-filtering-enable =
-    .label = Enable cosmetic filtering
-waterfox-blocker-panel-scripting-disable =
-    .label = Disable JavaScript
-waterfox-blocker-panel-scripting-enable =
-    .label = Enable JavaScript
-waterfox-blocker-panel-remote-fonts-disable =
-    .label = Disable remote fonts
-waterfox-blocker-panel-remote-fonts-enable =
-    .label = Enable remote fonts
-waterfox-blocker-panel-zapper-start =
-    .label = Zap element
-waterfox-blocker-panel-zapper-stop =
-    .label = Stop zapper
-waterfox-blocker-panel-picker-start =
-    .label = Pick element
-waterfox-blocker-panel-picker-stop =
-    .label = Stop picker
-waterfox-blocker-panel-logger-button =
-    .label = Open logger
+waterfox-blocker-panel-popup-open-button = Open
+
+waterfox-blocker-panel-settings-button = Manage ad blocking settings
+waterfox-blocker-panel-zapper-start = Zap element
+waterfox-blocker-panel-zapper-stop = Stop zapper
+waterfox-blocker-panel-picker-start = Pick element
+waterfox-blocker-panel-picker-stop = Stop picker
 waterfox-blocker-show-badge-pref =
     .label = Show blocked count on toolbar button
+waterfox-blocker-cname-uncloaking-pref =
+    .label = Enable CNAME uncloaking for disguised third-party trackers
+
+waterfox-adblocker-page-title = Ad Blocking
+waterfox-adblocker-page-heading = Ad Blocking
+waterfox-adblocker-page-description = Manage filters, rules, and site exceptions in one place.
+waterfox-adblocker-nav-general = General
+waterfox-adblocker-nav-filter-lists = Filter lists
+waterfox-adblocker-nav-custom-rules = Custom rules
+waterfox-adblocker-nav-my-filters = My filters
+waterfox-adblocker-nav-allowlist = Allowlist
+waterfox-adblocker-nav-privacy = Privacy Shields
+waterfox-adblocker-general-heading = General settings
+waterfox-adblocker-general-description = Control the overall behavior of the built-in ad blocker.
+waterfox-adblocker-general-enabled = Enable built-in ad blocking
+waterfox-adblocker-general-search-partner =
+    Allow ads for search partners (recommended for compatibility)
+waterfox-adblocker-general-show-badge = Show blocked count on toolbar button
+waterfox-adblocker-general-cname = Enable CNAME uncloaking for disguised third-party trackers
+waterfox-adblocker-filter-lists-heading = Filter lists
+waterfox-adblocker-filter-lists-description = Manage the filter lists that power blocking.
+waterfox-adblocker-open-filter-lists = Manage filter lists
+waterfox-adblocker-filter-list-urls-label = Custom filter list URLs
+waterfox-adblocker-save-section = Save changes
+waterfox-adblocker-my-filters-heading = My filters
+waterfox-adblocker-my-filters-description = Add custom filters and cosmetic rules.
+waterfox-adblocker-custom-rules-label = Custom filters
+waterfox-adblocker-allowlist-heading = Allowlist
+waterfox-adblocker-allowlist-description = Sites that are excluded from ad blocking.
+waterfox-adblocker-allowlist-label = Allowlisted sites
+waterfox-blocker-allowlist-label = Allowlisted sites
+waterfox-blocker-allowlist-placeholder =
+    .placeholder = example.com
+waterfox-adblocker-status-general-saved = General settings updated.
+waterfox-adblocker-status-filter-lists-invalid =
+    Use only HTTP or HTTPS filter-list URLs. Invalid entries:
+    { $urls }
+waterfox-adblocker-status-filter-lists-saved = Filter list URLs updated.
+waterfox-adblocker-status-my-filters-saved = Custom filters updated.
+waterfox-adblocker-status-allowlist-saved = Allowlist updated.
 
 waterfox-blocker-filter-lists-custom-urls = Fetched filter lists
 waterfox-blocker-filter-lists-custom-urls-description = Add one HTTP or HTTPS filter list URL per line. These lists are fetched after you save.
 waterfox-blocker-filter-lists-custom-urls-placeholder =
     .placeholder = https://example.com/filter-list.txt
-waterfox-blocker-filter-lists-custom-rules = Your rules
-waterfox-blocker-filter-lists-custom-rules-description = Add one adblock rule per line for your own custom blocking and allow rules.
-waterfox-blocker-filter-lists-custom-rules-placeholder =
-    .placeholder = ||example.com^
+waterfox-blocker-filter-lists-refresh = Updates
+waterfox-blocker-filter-lists-refresh-description = Use list metadata when it asks for a shorter refresh cadence. Otherwise, refresh no less often than this.
+waterfox-blocker-filter-lists-refresh-hours = hours
+waterfox-blocker-filter-lists-refresh-now = Refresh now
+waterfox-blocker-filter-lists-refreshing = Refreshing filter lists…
+waterfox-blocker-filter-lists-refreshed = Filter lists refreshed.
+waterfox-blocker-filter-lists-refresh-failed = Could not refresh filter lists.
 waterfox-blocker-filter-lists-built-in = Built-in filter lists
 waterfox-blocker-filter-lists-category-core = Default
 waterfox-blocker-filter-lists-category-privacy = Privacy
@@ -561,53 +609,6 @@ waterfox-blocker-exceptions-import-summary-message = The allowlist was updated.
 waterfox-blocker-exceptions-export-summary-title = Allowlist exported
 waterfox-blocker-exceptions-export-summary-message = The allowlist was saved to the selected file.
 
-waterfox-blocker-logger-window =
-    .title = Blocker Logger
-waterfox-blocker-logger-description = Review blocker activity from the current browsing session.
-waterfox-blocker-logger-current-tab-only =
-    .label = Current tab only
-waterfox-blocker-logger-filter =
-    .placeholder = Filter logger rows
-waterfox-blocker-logger-pause =
-    .label = Pause
-waterfox-blocker-logger-resume =
-    .label = Resume
-waterfox-blocker-logger-clear =
-    .label = Clear
-waterfox-blocker-logger-export =
-    .label = Export…
-waterfox-blocker-logger-export-title = Export blocker log
-# Variables:
-#   $shown (Number) - The number of log entries currently visible.
-#   $total (Number) - The total number of log entries loaded in the window.
-waterfox-blocker-logger-summary = { $shown } of { $total } entries shown
-waterfox-blocker-logger-state-live = Live
-waterfox-blocker-logger-state-paused = Paused
-waterfox-blocker-logger-column-time = Time
-waterfox-blocker-logger-column-action = Action
-waterfox-blocker-logger-column-type = Type
-waterfox-blocker-logger-column-source = Source
-waterfox-blocker-logger-column-rule = Rule
-waterfox-blocker-logger-column-url = URL
-waterfox-blocker-logger-details-title = Entry details
-waterfox-blocker-logger-details-hint = Select an entry to inspect it.
-waterfox-blocker-logger-details-empty = Select an entry to inspect it.
-waterfox-blocker-logger-empty = No blocker log entries yet.
-waterfox-blocker-logger-empty-filtered = No entries match the current tab or row filter.
-waterfox-blocker-logger-field-time = Timestamp
-waterfox-blocker-logger-field-scope = Scope
-waterfox-blocker-logger-field-type = Type
-waterfox-blocker-logger-field-action = Action
-waterfox-blocker-logger-field-url = URL
-waterfox-blocker-logger-field-document-url = Document URL
-waterfox-blocker-logger-field-rule = Rule
-waterfox-blocker-logger-field-message = Message
-waterfox-blocker-logger-field-source = Source
-waterfox-blocker-logger-field-tab-id = Tab ID
-waterfox-blocker-logger-export-done-title = Export complete
-waterfox-blocker-logger-export-done-message = The visible blocker log entries were saved.
-waterfox-blocker-logger-export-error-title = Export failed
-waterfox-blocker-logger-export-error-message = The blocker log could not be written.
 waterfox-blocker-extension-fallback-name-this = this extension
 waterfox-blocker-extension-fallback-name-your = your extension
 
@@ -622,6 +623,53 @@ waterfox-blocker-reenable-keep-extension = Keep extension blocker
 waterfox-blocker-extension-install-manage-settings = You can manage built-in ad blocking in Settings > Privacy & Security.
 waterfox-blocker-extension-install-anyway = Install anyway
 waterfox-blocker-extension-install-keep-built-in = Keep using built-in blocker
+
+## Privacy Shields section (about:adblocker → Privacy Shields)
+
+waterfox-shields-mode-header = Privacy Shields Mode
+waterfox-shields-mode-desc =
+    Choose one Brave-style mode for fingerprinting and language protections.
+    Standard balances privacy and compatibility. Strict adds stronger
+    anti-fingerprinting changes.
+waterfox-shields-mode-off = Off
+waterfox-shields-mode-standard = Standard
+waterfox-shields-mode-strict = Strict
+
+waterfox-shields-fingerprinting-header = Fingerprinting Protection
+waterfox-shields-fingerprinting-desc =
+    Reduce the information websites can use to identify your browser. Standard
+    enables Firefox's built-in Resist Fingerprinting engine. Strict also injects
+    randomised noise into canvas and audio APIs.
+waterfox-shields-fingerprinting-off = Off
+waterfox-shields-fingerprinting-standard = Standard
+waterfox-shields-fingerprinting-strict = Strict (randomized fingerprint)
+
+waterfox-shields-language-header = Language Reduction
+waterfox-shields-language-desc =
+    Limit the language information sent in HTTP request headers.
+waterfox-shields-language-off = Off
+waterfox-shields-language-standard = Standard (primary language only)
+waterfox-shields-language-strict = Strict (English only)
+
+waterfox-shields-popup-header = Pop-up Protection
+waterfox-shields-popup-desc =
+    Control browser-level pop-up blocking used alongside shields.
+waterfox-shields-popup-block = Block pop-ups opened while pages load
+
+waterfox-shields-status-saved = Privacy Shields settings updated.
+
+## Toolbar panel — shield level indicator
+
+# $level is one of "off", "standard", or "strict"
+waterfox-blocker-panel-shield-level =
+    { $level ->
+        [off] Privacy shield: off
+        [standard] Privacy shield: standard
+       *[strict] Your browser has a randomized fingerprint
+    }
+waterfox-blocker-panel-shield-off = off
+waterfox-blocker-panel-shield-standard = standard
+waterfox-blocker-panel-shield-strict = strict
 
 waterfox-blocked-page-title = Waterfox blocked this page
 waterfox-blocked-page-heading = Waterfox blocked this page
