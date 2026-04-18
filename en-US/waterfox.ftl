@@ -434,13 +434,16 @@ waterfox-blocker-manage-filter-lists =
 waterfox-blocker-manage-custom-rules =
     .label = Manage Custom Rules...
 
-waterfox-blocker-filter-lists-window =
+waterfox-blocker-filter-lists-window = Waterfox Ad Blocking Filter Lists
     .title = Waterfox Ad Blocking Filter Lists
 waterfox-blocker-filter-lists-dialog =
     .buttonlabelaccept = Save Changes
     .buttonaccesskeyaccept = S
-waterfox-blocker-filter-lists-description =
+waterfox-blocker-filter-lists-description = Choose which filter lists are enabled for ad blocking.
     .value = Choose which filter lists are enabled for ad blocking.
+waterfox-blocker-filter-lists-close =
+    .aria-label = Close
+waterfox-blocker-filter-lists-cancel = Cancel
 waterfox-blocker-filter-lists-active-count =
     .value = { $activeCount } active of { $totalCount }
 waterfox-blocker-filter-lists-column-enabled =
@@ -493,6 +496,17 @@ waterfox-blocker-panel-site-excepted = Ads allowed on this site
 waterfox-blocker-panel-partner-allowed = Ads allowed for search partners
 waterfox-blocker-panel-cname-status-enabled = CNAME uncloaking is on
 waterfox-blocker-panel-cname-status-disabled = CNAME uncloaking is off
+waterfox-blocker-panel-shield-mode = Privacy Shields mode
+waterfox-blocker-panel-shield-mode-off = Off
+waterfox-blocker-panel-shield-mode-standard = Standard
+waterfox-blocker-panel-shield-mode-strict = Strict
+# $count is the number of pop-up windows blocked on the current site.
+waterfox-blocker-panel-popup-shield =
+    { $count ->
+        [one] 1 pop-up blocked by shields
+       *[other] { $count } pop-ups blocked by shields
+    }
+waterfox-blocker-panel-popup-open-button = Open
 waterfox-blocker-stats =
     { $count ->
         [one] { $count } ad blocked on this site
@@ -516,6 +530,7 @@ waterfox-adblocker-nav-filter-lists = Filter lists
 waterfox-adblocker-nav-custom-rules = Custom rules
 waterfox-adblocker-nav-my-filters = My filters
 waterfox-adblocker-nav-allowlist = Allowlist
+waterfox-adblocker-nav-privacy = Privacy Shields
 waterfox-adblocker-general-heading = General settings
 waterfox-adblocker-general-description = Control the overall behavior of the built-in ad blocker.
 waterfox-adblocker-general-enabled = Enable built-in ad blocking
@@ -523,6 +538,11 @@ waterfox-adblocker-general-search-partner =
     Allow ads for search partners (recommended for compatibility)
 waterfox-adblocker-general-show-badge = Show blocked count on toolbar button
 waterfox-adblocker-general-cname = Enable CNAME uncloaking for disguised third-party trackers
+waterfox-adblocker-social-embeds-heading = Social embeds
+waterfox-adblocker-social-embeds-description = Use adblock filter tags to block social widgets and embedded trackers.
+waterfox-adblocker-facebook-embeds = Block Facebook embeds
+waterfox-adblocker-twitter-embeds = Block X / Twitter embeds
+waterfox-adblocker-linkedin-embeds = Block LinkedIn embeds
 waterfox-adblocker-filter-lists-heading = Filter lists
 waterfox-adblocker-filter-lists-description = Manage the filter lists that power blocking.
 waterfox-adblocker-open-filter-lists = Manage filter lists
@@ -612,6 +632,53 @@ waterfox-blocker-reenable-keep-extension = Keep extension blocker
 waterfox-blocker-extension-install-manage-settings = You can manage built-in ad blocking in Settings > Privacy & Security.
 waterfox-blocker-extension-install-anyway = Install anyway
 waterfox-blocker-extension-install-keep-built-in = Keep using built-in blocker
+
+## Privacy Shields section (about:adblocker → Privacy Shields)
+
+waterfox-shields-mode-header = Privacy Shields Mode
+waterfox-shields-mode-desc =
+    Choose one Brave-style mode for fingerprinting and language protections.
+    Standard balances privacy and compatibility. Strict adds stronger
+    anti-fingerprinting changes.
+waterfox-shields-mode-off = Off
+waterfox-shields-mode-standard = Standard
+waterfox-shields-mode-strict = Strict
+
+waterfox-shields-fingerprinting-header = Fingerprinting Protection
+waterfox-shields-fingerprinting-desc =
+    Reduce the information websites can use to identify your browser. Standard
+    enables Firefox's built-in Resist Fingerprinting engine. Strict also injects
+    randomised noise into canvas and audio APIs.
+waterfox-shields-fingerprinting-off = Off
+waterfox-shields-fingerprinting-standard = Standard
+waterfox-shields-fingerprinting-strict = Strict (randomized fingerprint)
+
+waterfox-shields-language-header = Language Reduction
+waterfox-shields-language-desc =
+    Limit the language information sent in HTTP request headers.
+waterfox-shields-language-off = Off
+waterfox-shields-language-standard = Standard (primary language only)
+waterfox-shields-language-strict = Strict (English only)
+
+waterfox-shields-popup-header = Pop-up Protection
+waterfox-shields-popup-desc =
+    Control browser-level pop-up blocking used alongside shields.
+waterfox-shields-popup-block = Block pop-ups opened while pages load
+
+waterfox-shields-status-saved = Privacy Shields settings updated.
+
+## Toolbar panel — shield level indicator
+
+# $level is one of "off", "standard", or "strict"
+waterfox-blocker-panel-shield-level =
+    { $level ->
+        [off] Privacy shield: off
+        [standard] Privacy shield: standard
+       *[strict] Your browser has a randomized fingerprint
+    }
+waterfox-blocker-panel-shield-off = off
+waterfox-blocker-panel-shield-standard = standard
+waterfox-blocker-panel-shield-strict = strict
 
 waterfox-blocked-page-title = Waterfox blocked this page
 waterfox-blocked-page-heading = Waterfox blocked this page
