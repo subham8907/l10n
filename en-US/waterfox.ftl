@@ -507,11 +507,7 @@ waterfox-blocker-panel-popup-shield =
        *[other] { $count } pop-ups blocked by shields
     }
 waterfox-blocker-panel-popup-open-button = Open
-waterfox-blocker-stats =
-    { $count ->
-        [one] { $count } ad blocked on this site
-       *[other] { $count } ads blocked on this site
-    }
+
 waterfox-blocker-panel-settings-button = Manage ad blocking settings
 waterfox-blocker-panel-zapper-start = Zap element
 waterfox-blocker-panel-zapper-stop = Stop zapper
@@ -538,11 +534,6 @@ waterfox-adblocker-general-search-partner =
     Allow ads for search partners (recommended for compatibility)
 waterfox-adblocker-general-show-badge = Show blocked count on toolbar button
 waterfox-adblocker-general-cname = Enable CNAME uncloaking for disguised third-party trackers
-waterfox-adblocker-social-embeds-heading = Social embeds
-waterfox-adblocker-social-embeds-description = Use adblock filter tags to block social widgets and embedded trackers.
-waterfox-adblocker-facebook-embeds = Block Facebook embeds
-waterfox-adblocker-twitter-embeds = Block X / Twitter embeds
-waterfox-adblocker-linkedin-embeds = Block LinkedIn embeds
 waterfox-adblocker-filter-lists-heading = Filter lists
 waterfox-adblocker-filter-lists-description = Manage the filter lists that power blocking.
 waterfox-adblocker-open-filter-lists = Manage filter lists
