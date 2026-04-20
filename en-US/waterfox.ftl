@@ -429,6 +429,8 @@ waterfox-blocker-dropdown-option-partner-exception =
 waterfox-blocker-dropdown-option-block-everything =
     .label = Block all ads
 
+waterfox-blocker-manage-allowlist =
+    .label = Manage Allowlist…
 waterfox-blocker-manage-filter-lists =
     .label = Manage Filter Lists...
 waterfox-blocker-manage-custom-rules =
@@ -480,22 +482,25 @@ waterfox-blocker-extension-install-learn-more =
 
 waterfox-blocker-third-party-notice-description = You have { $extensionName } enabled. Only one adblocker can be run at a time.
 
-waterfox-blocker-exceptions-window =
-    .title = Exceptions for Ad Blocking
-waterfox-blocker-exceptions-description = You can specify which websites have Ad Blocking turned off. Type the exact address of the site you want to manage and then click Add.
-
 waterfox-blocker-toolbar-button =
     .label = Ad Blocking
     .tooltiptext = Ad Blocking
 waterfox-blocker-panel-not-available = Not available on this page
-waterfox-blocker-panel-toggle =
-    .label = Ad Blocking on this site
-    .description = Block ads and nuisance requests on this site.
-waterfox-blocker-panel-disabled = Ad blocking is off
-waterfox-blocker-panel-site-excepted = Ads allowed on this site
-waterfox-blocker-panel-partner-allowed = Ads allowed for search partners
-waterfox-blocker-panel-cname-status-enabled = CNAME uncloaking is on
-waterfox-blocker-panel-cname-status-disabled = CNAME uncloaking is off
+waterfox-blocker-panel-toggle-on =
+    .label = Ad blocking
+    .description = On for this site
+    .aria-label = Ad blocking: On for { $host }
+waterfox-blocker-panel-toggle-off =
+    .label = Ad blocking
+    .description = Off for this site
+    .aria-label = Ad blocking: Off for { $host }
+waterfox-blocker-panel-adblock-status-on = Ad blocking on
+waterfox-blocker-panel-adblock-status-off = Ad blocking off
+waterfox-blocker-panel-adblock-status-search-partner = Search partner exception
+waterfox-blocker-panel-javascript-status-allowed = JavaScript allowed
+waterfox-blocker-panel-javascript-status-blocked = JavaScript blocked
+waterfox-blocker-panel-cname-status-on = CNAME uncloaking on
+waterfox-blocker-panel-cname-status-off = CNAME uncloaking off
 waterfox-blocker-panel-shield-mode = Privacy Shields mode
 waterfox-blocker-panel-shield-mode-off = Off
 waterfox-blocker-panel-shield-mode-standard = Standard
@@ -520,7 +525,7 @@ waterfox-blocker-cname-uncloaking-pref =
 
 waterfox-adblocker-page-title = Ad Blocking
 waterfox-adblocker-page-heading = Ad Blocking
-waterfox-adblocker-page-description = Manage filters, rules, and site exceptions in one place.
+waterfox-adblocker-page-description = Manage filters, rules, and site shields in one place.
 waterfox-adblocker-nav-general = General
 waterfox-adblocker-nav-filter-lists = Filter lists
 waterfox-adblocker-nav-custom-rules = Custom rules
@@ -543,9 +548,14 @@ waterfox-adblocker-my-filters-heading = My filters
 waterfox-adblocker-my-filters-description = Add custom filters and cosmetic rules.
 waterfox-adblocker-custom-rules-label = Custom filters
 waterfox-adblocker-allowlist-heading = Allowlist
-waterfox-adblocker-allowlist-description = Sites that are excluded from ad blocking.
+waterfox-adblocker-allowlist-description = Sites where the ad blocking shield is turned off.
 waterfox-adblocker-allowlist-label = Allowlisted sites
-waterfox-blocker-allowlist-label = Allowlisted sites
+waterfox-blocker-allowlist-window =
+    .title = Ad Blocking Allowlist
+waterfox-blocker-allowlist-description = Sites in this list have the ad blocking shield turned off.
+waterfox-blocker-allowlist-entry-field = Website address
+waterfox-blocker-allowlist-add =
+    .label = Add
 waterfox-blocker-allowlist-placeholder =
     .placeholder = example.com
 waterfox-adblocker-status-general-saved = General settings updated.
@@ -580,34 +590,6 @@ waterfox-blocker-filter-lists-invalid-url-title = Invalid filter list URL
 waterfox-blocker-filter-lists-invalid-url-message =
     Use only HTTP or HTTPS URLs. Could not save:
     { $urls }
-
-waterfox-blocker-exceptions-entry-field =
-    .label = Allowlist entries
-waterfox-blocker-exceptions-entry-field-description = Paste one domain or URL per line. Use Ctrl+Enter to add them.
-waterfox-blocker-exceptions-placeholder =
-    .placeholder = example.com
-waterfox-blocker-exceptions-add =
-    .label = Add to allowlist
-waterfox-blocker-exceptions-import =
-    .label = Import…
-waterfox-blocker-exceptions-export =
-    .label = Export…
-waterfox-blocker-exceptions-import-title = Import allowlist
-waterfox-blocker-exceptions-export-title = Export allowlist
-waterfox-blocker-exceptions-import-error-title = Import failed
-waterfox-blocker-exceptions-import-error-message = The selected file could not be read.
-waterfox-blocker-exceptions-export-error-title = Export failed
-waterfox-blocker-exceptions-export-error-message = The allowlist could not be written.
-waterfox-blocker-exceptions-invalid-title = Invalid allowlist entry
-# Variables:
-#   $count (Number) - Number of invalid entries.
-#   $entries (String) - A newline-separated list of entries that could not be used.
-waterfox-blocker-exceptions-invalid-message = Could not use { $count } entries:
-    { $entries }
-waterfox-blocker-exceptions-import-summary-title = Allowlist imported
-waterfox-blocker-exceptions-import-summary-message = The allowlist was updated.
-waterfox-blocker-exceptions-export-summary-title = Allowlist exported
-waterfox-blocker-exceptions-export-summary-message = The allowlist was saved to the selected file.
 
 waterfox-blocker-extension-fallback-name-this = this extension
 waterfox-blocker-extension-fallback-name-your = your extension
@@ -651,6 +633,13 @@ waterfox-shields-language-off = Off
 waterfox-shields-language-standard = Standard (primary language only)
 waterfox-shields-language-strict = Strict (English only)
 
+waterfox-shields-javascript-header = JavaScript
+waterfox-shields-javascript-desc =
+    Choose whether websites can run JavaScript by default. You can still
+    override this per site from the shield panel, like Brave's Block Scripts control.
+waterfox-shields-javascript-allow = Allow all sites to use JavaScript
+waterfox-shields-javascript-block = Block JavaScript by default
+
 waterfox-shields-popup-header = Pop-up Protection
 waterfox-shields-popup-desc =
     Control browser-level pop-up blocking used alongside shields.
@@ -670,6 +659,14 @@ waterfox-blocker-panel-shield-level =
 waterfox-blocker-panel-shield-off = off
 waterfox-blocker-panel-shield-standard = standard
 waterfox-blocker-panel-shield-strict = strict
+waterfox-blocker-panel-javascript-toggle-on =
+    .label = Block JavaScript
+    .description = On for this site
+    .aria-label = Block JavaScript: On for { $host }
+waterfox-blocker-panel-javascript-toggle-off =
+    .label = Block JavaScript
+    .description = Off for this site
+    .aria-label = Block JavaScript: Off for { $host }
 
 waterfox-blocked-page-title = Waterfox blocked this page
 waterfox-blocked-page-heading = Waterfox blocked this page
